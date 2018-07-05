@@ -1,0 +1,86 @@
+<html xmlns="http://www.w3.org/1999/xhtml" class="no-js"> 
+    <head>
+        <meta charset="utf-8"/>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+        <title>JDC - Sign In</title>
+        <meta name="description" content=""/>
+        <meta name="viewport" content="width=device-width"/>
+        <script src="resources/js/jquery-1.9.1.min.js"></script>
+        <script src="resources/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="resources/js/login.js"></script>      
+        <link rel="stylesheet" href="resources/css/main.css"/>
+        <link rel="stylesheet" href="resources/bootstrap/css/bootstrap.min.css"/>
+        <link rel="stylesheet" href="resources/css/font-awesome.min.css"/>
+        <link rel="stylesheet" href="resources/css/font-awesome/css/font-awesome.css"/>
+        <link rel="stylesheet" href="resources/css/frontend.css"/>
+        <link rel="shortcut icon" type="image/x-icon" href="resources/favicon.ico" />
+        <link rel="icon" type="image/png" href="assets/img/favicon-16x16.png" sizes="16x16" />
+        <link rel="icon" type="image/png" href="assets/img/favicon-32x32.png" sizes="32x32" />
+        <script src="assets/js/common.min.js"></script>
+        <script src="assets/js/angular_common.min.js"></script>
+        <script src="assets/js/altair_app.min.js"></script>
+        <script src="assets/js/treeController.min.js"></script>
+        <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="all" />
+        <link rel="stylesheet" href="assets/css/main.min.css" media="all" id="main_stylesheet" />
+        <style>
+            .btn.btn-primary {
+                background-color: #F58535 !important;
+            }
+            a:hover {
+                color: #F58535 !important;
+            }
+            input:hover,
+            input:focus {
+                border-color: purple !important;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="login_page_container">
+            <div class="login_page_wrapper">
+                <div class="md-card" id="login_card">
+                    <div class="md-card-content header-login">
+                        <img src="resources/image/jdc-icon/logo-iserve.png" width="50%" height="auto"/>
+
+                        <div style="margin-top:10px;"></div>
+                    </div>
+                    <div class="md-card-content large-padding" id="login_form" ng-controller="newnetaLoginCtrl">
+                        <form>
+                            <div class="uk-form-row">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td width="10%"><i class="uk-icon-user uk-icon-small" style="color: #F39C12"></i></td>
+                                        <td width="90%"><label for="login_username">Username</label>
+                                            <input class="md-input" type="text" ng-model="login_username" id="username" required="required"
+                                                   md-input/></td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="uk-form-row">
+                                <table style="width: 100%;">
+                                    <tr>
+                                        <td width="10%"><i class="uk-icon-lock uk-icon-small" style="color: #F39C12"></i></td>
+                                        <td width="90%">
+                                            <label for="login_password">Password</label>
+                                            <input class="md-input" id="password" type="password" required="required"
+                                                   ng-model="login_password" md-input/>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="form-group" style="margin-bottom: 1px!important">
+                                <div style="display: none" id="alert-error">
+                                    <div class="alert alert-danger" role="alert">Username and password do not match.</div>
+                                </div>                     
+                            </div>
+                            <div class="uk-margin-medium-top">
+                                <button type="submit" id="jdcrms012p02BtnLogin" class="md-btn md-btn-primary md-btn-block md-btn-large" style="padding-top: 10px; padding-bottom: 10px" 
+                                        onclick="login(event)">Sign In</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

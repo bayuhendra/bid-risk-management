@@ -1,0 +1,119 @@
+/*	--------------------------------------------------
+        :: Table Filter
+    -------------------------------------------------- */
+    .panel {
+        border: 0px solid #ddd;
+        background-color: #fff;
+    }
+    .panel .btn-group {
+        margin: 15px 0 30px;
+    }
+    .panel .btn-group .btn {
+        transition: background-color .3s ease;
+    }
+    .table-filter {
+        background-color: #fff;
+        border-bottom: 1px solid #eee;
+    }
+    .table-filter tbody tr:hover {
+        background-color: #eee;
+    }
+    .table-filter tbody tr td {
+        padding: 20px 10px;
+        vertical-align: middle;
+        border-top-color: #eee;
+    }
+    .table-filter tbody tr.selected td {
+        background-color: #eee;
+    }
+    .table-filter tr td:first-child {
+        width: 38px;
+    }
+    .table-filter tr td:nth-child(2) {
+        width: 35px;
+    }
+    .table-filter .star {
+        color: #ccc;
+        text-align: center;
+        display: block;
+    }
+    .table-filter .star.star-checked {
+        color: #F0AD4E;
+    }
+    .table-filter .star:hover {
+        color: #ccc;
+    }
+    .table-filter .star.star-checked:hover {
+        color: #F0AD4E;
+    }
+    .table-filter .media-photo {
+        width: 35px;
+    }
+
+    .table-filter .media-meta {
+        font-size: 17px;
+        color: #000000;
+    }
+    .table-filter .media .titleGrid {
+        color: #F58535;
+        background:#C2C9C9;
+        font-size: 20px;
+        font-weight: normal;
+        padding:19px;
+        margin-bottom:15px !important;
+        position:relative;
+        margin: 0;
+    }
+    .table-filter .media .media-body > p {
+        padding: 0 20px;
+    }
+    .table-filter .media .media-body li {
+        padding: 0 35px;
+    }
+    .table-filter .media .titleGrid span {
+        font-size: .7em;
+        margin-right: 20px;
+    }
+    .table-filter .media .titleGrid div {
+        text-align: center;
+        position: absolute;
+        right: 0;
+        top: 8px;
+    }
+    .table-filter .media .titleGrid div span:first-child{
+        font-size: 1.2em;
+    }
+    .table-filter .media .titleGrid span.pagado {
+        color: #d9534f;
+    }
+    .table-filter .media .titleGrid span.pendiente {
+        color: #d9534f;
+    }
+    .table-filter .media .titleGrid span.cancelado {
+        color: #d9534f;
+    }
+    .table-filter .media .summary {
+        font-size: 14px;
+    }
+    .btn{
+        border:none !important;
+        background: #F58535 !important;
+        color: #fff !important;
+    }
+
+    .btn-primary{
+        background: #F58535 !important;
+        border-radius: 3px !important;
+        color: #fff !important;
+    }
+    .btn-default{
+        border-radius: 3px !important;
+        background: #888 !important;
+        color:#FFF;
+    }
+    a.btn{
+        padding:3px 5px !important;
+    }
+    textarea {
+        resize: none;
+    }
