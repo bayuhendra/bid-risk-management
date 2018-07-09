@@ -206,11 +206,11 @@
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Maintain User
+                                    Maintain Service
                                 </h2>
                                 <div style="margin-top: 1rem">
                                     <button type="button" class="btn btn-primary waves-effect" 
-                                            data-toggle="modal" data-target="#jdcuam001-add">
+                                            data-toggle="modal" data-target="#jdcuam002-add">
                                         Add New
                                     </button>
                                 </div>
@@ -219,21 +219,25 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>Username</th>
-                                            <th>Full Name</th>
-                                            <th>Email</th>
-                                            <th>Status</th>
+                                            <th>Service Name</th>
+                                            <th>Service Desc</th>
+                                            <th>Method</th>
+                                            <th>URL</th>
+                                            <th>Begin Eff</th>
+                                            <th>End Eff</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>admin</td>
-                                            <td>administrator</td>
-                                            <td>admin@ag-it.com</td>
-                                            <td>Active</td>
+                                            <td>Create Project</td>
+                                            <td>Create Project</td>
+                                            <td>POST</td>
+                                            <td>/svc-jdc-bid-risk/jdc/bdr001/create-project</td>
+                                            <td>01-Jan-2017</td>
+                                            <td>01-Jan-2100</td>
                                             <td>
-                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcuam001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcuam002-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -245,49 +249,65 @@
             </div>
         </section>
 
-        <div id="jdcuam001-add" class="modal fade" role="dialog">
+        <div id="jdcuam002-add" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Add User</label>
+                        <label>Add Role</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">Username</label>
+                                        <label for="name_project">Service Name</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">Full Name</label>
+
+                                        <label for="name_project">Service Desc</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">NPK</label>
+
+                                        <label for="name_project">Method</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">Email</label>
+
+                                        <label for="name_project">URL</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control">
                                             </div>
                                         </div>
-                                        
+
+                                        <label for="name_project">Begin Eff</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="date" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <label for="name_project">End Eff</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="date" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+
                                         <label for="email_address">Status</label>
                                         <div class="form-group form-float">
                                             <div class="body" style="padding-bottom: inherit; padding-top: inherit">
@@ -303,8 +323,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcuam001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcuam001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                            <button id="jdcuam002-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcuam002-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
                                         </div>
                                     </form>
                                 </div>
@@ -315,55 +335,70 @@
             </div>
         </div>
 
-        <div id="jdcuam001-edit" class="modal fade" role="dialog">
+        <div id="jdcuam002-edit" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Edit User</label>
+                        <label>Edit Role</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">Username</label>
+                                        <label for="name_project">Service Name</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <label for="name_project">Service Desc</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+
+                                        <label for="name_project">Method</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <select class="form-control show-tick">
+                                                    <option value="1">-- Please select --</option>
+                                                    <option value="2" selected>Active</option>
+                                                    <option value="3">Inactive</option>
+                                                </select>
+                                            </div>
+                                        </div>
+
+                                        <label for="name_project">URL</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control"
                                                        disabled
-                                                       placeholder="admin">
+                                                       placeholder="/svc-jdc-bid-risk/jdc/bdr001/create-project">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">Full Name</label>
+
+                                        <label for="name_project">Begin Eff</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control" 
-                                                       placeholder="administrator">
+                                                <input type="date" id="email_address" 
+                                                       class="form-control">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">NPK</label>
+
+                                        <label for="name_project">End Eff</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control" 
-                                                       placeholder="1234">
+                                                <input type="date" id="email_address" 
+                                                       class="form-control">
                                             </div>
                                         </div>
-                                        
-                                        <label for="name_project">Email</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       disabled
-                                                       placeholder="admin@ag-it.com">
-                                            </div>
-                                        </div>
-                                        
+
                                         <label for="email_address">Status</label>
                                         <div class="form-group form-float">
                                             <div class="body" style="padding-bottom: inherit; padding-top: inherit">
@@ -379,8 +414,8 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcuam001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcuam001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                            <button id="jdcuam002-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcuam002-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
                                         </div>
                                     </form>
                                 </div>
