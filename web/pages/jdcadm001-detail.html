@@ -227,7 +227,7 @@
                                             <th>Desc3</th>
                                             <th>Desc4</th>
                                             <th>Desc5</th> 
-                                            <th>Seq. No.</th>
+                                            <th>Seq. Num.</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
@@ -316,9 +316,111 @@
                 </div>
             </div>
         </section>
-
-
-
+        
+        <div id="jdcadm001-add" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width:700px">
+                <div class="modal-content">
+                    <div class="modal-body" style="text-align: center;" >
+                        <label>Edit Business Parameter</label>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <div class="body">
+                                    <form id="form_validation" method="POST">
+                                        <label for="name_project">Code</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control"
+                                                       disabled
+                                                       placeholder="PRPST">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Key</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="001">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc1</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="Perkantoran">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc2</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc3</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc4</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc5</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Sequence Number</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="email_address">Status</label>
+                                        <div class="form-group form-float">
+                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-6" style="margin-left: inherit;">
+                                                        <select class="form-control show-tick">
+                                                            <option value="1">-- Please select --</option>
+                                                            <option value="2" selected>Active</option>
+                                                            <option value="3">Inactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: center">
+                                            <button id="jdcadm001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcadm001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
         <div id="jdcadm001-edit" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
@@ -339,20 +441,61 @@
                                                        placeholder="PRPST">
                                             </div>
                                         </div>
-                                        <label for="name_project">Code</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control" 
-                                                       placeholder="Code">
-                                            </div>
-                                        </div>
                                         <label for="name_project">Key</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control" 
-                                                       placeholder="Key">
+                                                       disabled
+                                                       placeholder="001">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc1</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="Perkantoran">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc2</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc3</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc4</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc5</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Sequence Number</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
                                             </div>
                                         </div>
                                         <label for="email_address">Status</label>
