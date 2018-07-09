@@ -126,7 +126,7 @@
                             </a>
                         </li>
 
-                        <li class="active">
+                        <li>
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">widgets</i>
                                 <span>Administration</span>
@@ -138,49 +138,49 @@
                             </ul>
                         </li>
 
-                        <li>
+                        <li class="active">
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">widgets</i>
                                 <span>User Management</span>
                             </a>
                             <ul class="ml-menu">
                                 <li>
-                                    <a href="jdcuam001.html">Maintain User</a>
+                                    <a href="jdcuamjdcuam001.html">Maintain User</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam002.html">Maintain Role</a>
+                                    <a href="jdcuamjdcuam002.html">Maintain Role</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam003.html">Maintain Service</a>
+                                    <a href="jdcuamjdcuam003.html">Maintain Service</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam004.html">Maintain Menu</a>
+                                    <a href="jdcuamjdcuam004.html">Maintain Menu</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam005.html">Maintain Role User</a>
+                                    <a href="jdcuamjdcuam005.html">Maintain Role User</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam006.html">Maintain Role Access</a>
+                                    <a href="jdcuamjdcuam006.html">Maintain Role Access</a>
                                 </li>
                                 <li>
-                                    <a href="jdcuam007.html">Maintain Role Service</a>
+                                    <a href="jdcuamjdcuam007.html">Maintain Role Service</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a href="reviewer-level-1.html">
+                            <a href="pages/reviewer-level-1.html">
                                 <i class="material-icons">update</i>
                                 <span>Reviewer Level 1</span>
                             </a>
                         </li>
                         <li>
-                            <a href="reviewer-level-2.html">
+                            <a href="pages/reviewer-level-2.html">
                                 <i class="material-icons">update</i>
                                 <span>Reviewer Level 2</span>
                             </a>
                         </li>
                         <li>
-                            <a href="reviewer-level-3.html">
+                            <a href="pages/reviewer-level-3.html">
                                 <i class="material-icons">update</i>
                                 <span>Reviewer Level 3</span>
                             </a>
@@ -198,6 +198,7 @@
             <!-- #END# Left Sidebar -->
         </section>
 
+
         <section class="content">
             <div class="container-fluid">
                 <div class="row clearfix">
@@ -209,7 +210,7 @@
                                 </h2>
                                 <div style="margin-top: 1rem">
                                     <button type="button" class="btn btn-primary waves-effect" 
-                                            data-toggle="modal" data-target="#jdcadm001-add">
+                                            data-toggle="modal" data-target="#jdcuam001-add">
                                         Add New
                                     </button>
                                 </div>
@@ -218,21 +219,22 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>NO</th>
-                                            <th>Code</th>
-                                            <th>Description</th>
+                                            <th>Username</th>
+                                            <th>Full Name</th>
+                                            <th>Email</th>
                                             <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>PRPST</td>
-                                            <td>Project Position</td>
+                                            <td>admin</td>
+                                            <td>administrator</td>
+                                            <td>admin@ag-it.com</td>
                                             <td>Active</td>
-                                            <td><a href="jdcadm001-detail.html" class="small-box-footer"> Detail <i class="fa fa-arrow-circle-right"></i></a> 
-                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a></td>
+                                            <td>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcuam001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -242,87 +244,50 @@
                 </div>
             </div>
         </section>
-        
-        <div id="jdcadm001-add" class="modal fade" role="dialog">
-            <div class="modal-dialog" style="width:700px">
-                <div class="modal-content">
-                    <div class="modal-body" style="text-align: center;" >
-                        <label>Add Business Parameter</label>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="card">
-                                <div class="body">
-                                    <form id="form_validation" method="POST">
-                                        <label for="name_project">Code</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-                                        <label for="name_project">Description</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Status</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="1">-- Please select --</option>
-                                                            <option value="2">Active</option>
-                                                            <option value="3">Inactive</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcadm001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcadm001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id="jdcadm001-edit" class="modal fade" role="dialog">
+        <div id="jdcuam001-add" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Edit Business Parameter</label>
+                        <label>Add User</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">Code</label>
+                                        <label for="name_project">Username</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       disabled
-                                                       placeholder="PRPST">
+                                                       class="form-control">
                                             </div>
                                         </div>
-                                        <label for="name_project">Description</label>
+                                        
+                                        <label for="name_project">Full Name</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
-                                                       class="form-control" 
-                                                       placeholder="Project Position">
+                                                       class="form-control">
                                             </div>
                                         </div>
+                                        
+                                        <label for="name_project">NPK</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="name_project">Email</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control">
+                                            </div>
+                                        </div>
+                                        
                                         <label for="email_address">Status</label>
                                         <div class="form-group form-float">
                                             <div class="body" style="padding-bottom: inherit; padding-top: inherit">
@@ -338,8 +303,84 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcadm001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcadm001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                            <button id="jdcuam001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcuam001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="jdcuam001-edit" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width:700px">
+                <div class="modal-content">
+                    <div class="modal-body" style="text-align: center;" >
+                        <label>Edit User</label>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <div class="body">
+                                    <form id="form_validation" method="POST">
+                                        <label for="name_project">Username</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control"
+                                                       disabled
+                                                       placeholder="admin">
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="name_project">Full Name</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="administrator">
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="name_project">NPK</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="1234">
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="name_project">Email</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control"
+                                                       disabled
+                                                       placeholder="admin@ag-it.com">
+                                            </div>
+                                        </div>
+                                        
+                                        <label for="email_address">Status</label>
+                                        <div class="form-group form-float">
+                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-6" style="margin-left: inherit;">
+                                                        <select class="form-control show-tick">
+                                                            <option value="1">-- Please select --</option>
+                                                            <option value="2" selected>Active</option>
+                                                            <option value="3">Inactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: center">
+                                            <button id="jdcuam001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcuam001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
                                         </div>
                                     </form>
                                 </div>
