@@ -206,7 +206,7 @@
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Maintain Service
+                                    Maintain Role Service
                                 </h2>
                                 <div style="margin-top: 1rem">
                                     <button type="button" class="btn btn-primary waves-effect" 
@@ -219,10 +219,10 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
+                                            <th>Role ID</th>
+                                            <th>Role Name</th>
                                             <th>Service Name</th>
                                             <th>Service Desc</th>
-                                            <th>Method</th>
-                                            <th>URL</th>
                                             <th>Begin Eff</th>
                                             <th>End Eff</th>
                                             <th>Action</th>
@@ -230,10 +230,10 @@
                                     </thead>
                                     <tbody>
                                         <tr>
+                                            <td>1</td>
+                                            <td>ADM</td>
                                             <td>Create Project</td>
                                             <td>Create Project</td>
-                                            <td>POST</td>
-                                            <td>/svc-jdc-bid-risk/jdc/bdr001/create-project</td>
                                             <td>01-Jan-2017</td>
                                             <td>01-Jan-2100</td>
                                             <td>
@@ -253,14 +253,14 @@
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Add Role</label>
+                        <label>Add Role User</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">Service Name</label>
+                                        <label for="name_project">Role</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
@@ -268,23 +268,7 @@
                                             </div>
                                         </div>
 
-                                        <label for="name_project">Service Desc</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Method</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">URL</label>
+                                        <label for="name_project">Service</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
@@ -339,49 +323,28 @@
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Edit Role</label>
+                        <label>Edit Role User</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">Service Name</label>
+                                        <label for="name_project">Role</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
-                                                       class="form-control"
+                                                       class="form-control" disabled
+                                                       placeholder="ADM">
+                                            </div>
+                                        </div>
+
+                                        <label for="name_project">Service</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" disabled
                                                        placeholder="Create Project">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Service Desc</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       placeholder="Create Project">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Method</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <select class="form-control show-tick">
-                                                    <option value="1">-- Please select --</option>
-                                                    <option value="2" selected>POST</option>
-                                                    <option value="3">GET</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">URL</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       disabled
-                                                       placeholder="/svc-jdc-bid-risk/jdc/bdr001/create-project">
                                             </div>
                                         </div>
 
