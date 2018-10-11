@@ -113,13 +113,13 @@
                                 <span>Home</span>
                             </a>
                         </li>
-                        <li class="active">
-                            <a href="pages/project.html">
+                        <li>
+                            <a href="../pages/project.html">
                                 <i class="material-icons">assignment</i>
                                 <span>Add Project</span>
                             </a>
                         </li>
-                        <li>
+                        <li class="active">
                             <a href="../pages/list-project.html">
                                 <i class="material-icons">view_list</i>
                                 <span>List Project</span>
@@ -185,13 +185,14 @@
             <!-- #END# Left Sidebar -->
         </section>
 
+
         <section class="content">
             <div class="container-fluid">
                 <div class="row clearfix">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                         <div class="card">
                             <div class="header">
-                                <h2>ADD PROJECT</h2>
+                                <h2>DETAIL RISK</h2>
                             </div>
                             <div class="body">
                                 <form id="form_validation" method="POST">
@@ -200,7 +201,7 @@
                                     </label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Input Project Name">
+                                            Bid Risk Assessment
                                         </div>
                                     </div>
 
@@ -215,7 +216,7 @@
                                                         <option value="">-- Please select --</option>
                                                         <option value="System Server">System Server</option>
                                                         <option value="System Storage">System Storage</option>
-                                                        <option value="Software">Software</option>
+                                                        <option value="Software" selected>Software</option>
                                                         <option value="Client">Client</option>
                                                         <option value="Core Network">Core Network</option>
                                                         <option value="Distribution Network">Distribution Network</option>
@@ -234,7 +235,7 @@
                                     </label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="text" class="form-control" placeholder="Input Customer Name">
+                                            Astra Graphia Information Technology
                                         </div>
                                     </div>
 
@@ -243,7 +244,7 @@
                                     </label>
                                     <div class="form-group">
                                         <div class="form-line">
-                                            <input type="number" class="form-control" placeholder="Input Revenue Value">
+                                            Rp. 1.500.000.000
                                         </div>
                                     </div>
 
@@ -259,7 +260,7 @@
                                                         <option value="Box Only">Box Only</option>
                                                         <option value="Implementation">Implementation</option>
                                                         <option value="Operation">Operation</option>
-                                                        <option value="Implementation & Operation" >Implementation & Operation</option>
+                                                        <option value="Implementation & Operation" selected>Implementation & Operation</option>
                                                     </select>
                                                 </div>
                                             </div>
@@ -275,7 +276,7 @@
                                                 <div class="col-sm-6" style="margin-left: inherit;">
                                                     <select class="form-control show-tick">
                                                         <option value="">-- Please select --</option>
-                                                        <option value="Box Only">Yes</option>
+                                                        <option value="" selected>Yes</option>
                                                         <option value="Implementation">No</option>
                                                     </select>
                                                 </div>
@@ -292,7 +293,7 @@
                                                 <div class="col-sm-6" style="margin-left: inherit;">
                                                     <select class="form-control show-tick">
                                                         <option value="">-- Please select --</option>
-                                                        <option value="Box Only">Yes</option>
+                                                        <option value="Box Only" selected>Yes</option>
                                                         <option value="Implementation">No</option>
                                                     </select>
                                                 </div>
@@ -372,7 +373,6 @@
                                     <div class="form-group">
                                         <div class="form-line">
                                             11
-                                            <!--<input type="number" class="form-control" placeholder="11.33">-->
                                         </div>
                                     </div>
 
@@ -382,7 +382,6 @@
                                     <div class="form-group">
                                         <div class="form-line">
                                             13.11
-                                            <!--<input type="number" class="form-control" placeholder="13">-->
                                         </div>
                                     </div>
 
@@ -392,18 +391,57 @@
                                     <div class="form-group">
                                         <div class="form-line">
                                             17.12
-                                            <!--<input type="number" class="form-control" placeholder="12.17">-->
                                         </div>
                                     </div>
 
                                     <div class="form-group">
                                         <label for="name_project">
-                                            RFQ / RFP<span style="color:red"> *) </span>
+                                            RFQ / RFP File<span style="color:red"> *) </span>
                                         </label>
-                                        <input type="file" class="form-control-file">
+                                        <a href="#"
+                                           style="margin-left: 1rem"
+                                           class="btn btn-primary waves-effect" 
+                                           data-toggle="modal" 
+                                           data-target="#popup-main-activity">
+                                            Download
+                                        </a>
                                     </div>
 
-                                    <button class="btn btn-primary waves-effect" type="submit">SUBMIT</button>
+                                    <label>
+                                        Approval History
+                                    </label>
+                                    <table class="table table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 5%">NO</th>
+                                                <th style="width: 10%">NAME</th>
+                                                <th style="width: 10%">ROLE</th>
+                                                <th style="width: 5%">APPROVAL DATE</th>
+                                                <th style="width: 10%">STATUS</th>
+                                                <th style="width: 30%">NOTE</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td scope="row">1</td>
+                                                <td>Heri Triyogo</td>
+                                                <td>Bid Risk Comittee</td>
+                                                <td>11-Oct-2018</td>
+                                                <td>Approved</td>
+                                                <td>Approved by BRC</td>
+                                            </tr>
+
+                                            <tr>
+                                                <td scope="row">2</td>
+                                                <td>Devi Pertiwi</td>
+                                                <td>Board of Director</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                                <td>-</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    
                                 </form>
                             </div>
                         </div>
@@ -412,43 +450,49 @@
             </div>
         </section>
 
-        <!--modal popup-->
-        <div id="popup-main-activity" class="modal fade" role="dialog">
-            <div class="modal-dialog" style="width: 80%">
+        <div id="myModalViewDataHistory" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width:1000px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
                         <label>
-                            Main Activity
+                            History
                         </label>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="card">
-                                <div class="body">
-                                    <form id="form_validation" method="POST">
-                                        <label for="name_project">
-                                            Activity<span style="color:red"> *) </span>
-                                        </label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <select class="form-control show-tick">
-                                                    <option value="">-- Select Activity --</option>
-                                                    <option>Delivery Server</option>
-                                                    <option>Racking Server</option>
-                                                    <option>Configure Server</option>
-                                                    <option>Cabling</option>
-                                                    <option>Power</option>
-                                                </select>
-                                            </div>
-                                        </div>
-
-                                        <div class="modal-footer" style="text-align: center">
-                                            <button class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
-                                        </div>
-                                    </form>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <div class="box">
+                                    <div class="box-header">
+                                    </div>
+                                    <div class="box-body table-responsive no-padding">
+                                        <table class="table table-hover">
+                                        </table>
+                                    </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer" style="text-align: center">
+                        <button id="jdcpmg001p02CancelModal" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--modal popup-->
+        <div id="popup-main-activity" class="modal fade" role="dialog">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Download Information</h4>
+                    </div>
+                    <div class="modal-body" style="display:table;width:100%;">
+                        <div style="display:table-cell;width:100%;text-align: center;">
+                            <p class="text-center large-font" style="margin-bottom: 30px;">
+                                File download not available.
+                            </p>
+                            <button data-dismiss="modal" type="button" style="display: inline-block;">
+                                OK
+                            </button>
                         </div>
                     </div>
                 </div>

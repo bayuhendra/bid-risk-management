@@ -90,14 +90,14 @@
                         <img src="../images/user.png" width="48" height="48" alt="User" />
                     </div>
                     <div class="info-container">
-                        <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Bayu Hendra Setiawan</div>
-                        <div class="email">bayu.setiawan@ag-it.com</div>
+                        <div class="name" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Admin</div>
+                        <div class="email">admin@ag-it.com</div>
                         <div class="btn-group user-helper-dropdown">
                             <i class="material-icons" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">keyboard_arrow_down</i>
                             <ul class="dropdown-menu pull-right">
                                 <li><a href="javascript:void(0);"><i class="material-icons">person</i>Profile</a></li>
                                 <li role="separator" class="divider"></li>
-                                <li><a href="javascript:void(0);"><i class="material-icons">input</i>Sign Out</a></li>
+                                <li><a href="../index.html"><i class="material-icons">input</i>Sign Out</a></li>
                             </ul>
                         </div>
                     </div>
@@ -128,12 +128,13 @@
                         <li>
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">widgets</i>
-                                <span>Administration</span>
+                                <span>Data Master</span>
                             </a>
                             <ul class="ml-menu">
-                                <li>
-                                    <a href="jdcadm001.html">Business Parameter</a>
-                                </li>
+                                <li><a href="pages/jdcadm001.html">Business Parameter</a></li>
+                                <li><a href="pages/jdcadm002.html">Risk</a></li>
+                                <li><a href="pages/jdcadm003.html">Control</a></li>
+                                <li><a href="pages/jdcadm004.html">Mapping Risk & Control</a></li>
                             </ul>
                         </li>
                         <li>
@@ -166,21 +167,9 @@
                             </ul>
                         </li>
                         <li>
-                            <a href="../pages/reviewer-level-1.html">
+                            <a href="../pages/task-list.html">
                                 <i class="material-icons">update</i>
-                                <span>Reviewer Level 1</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/reviewer-level-2.html">
-                                <i class="material-icons">update</i>
-                                <span>Reviewer Level 2</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="../pages/reviewer-level-3.html">
-                                <i class="material-icons">update</i>
-                                <span>Reviewer Level 3</span>
+                                <span>My Task List</span>
                             </a>
                         </li>
                     </ul>
@@ -211,28 +200,36 @@
                                     <thead>
                                         <tr>
                                             <th>NO</th>
-                                            <th>NAME</th>
-                                            <th>POSITION</th>
-                                            <th>CLASSIFICATION</th>
-                                            <th>TYPE</th>
-                                            <th>LATEST POSITION</th>
-                                            <th>DOC</th>
+                                            <th>PROJECT NAME</th>
+                                            <th>CUSTOMER NAME</th>
+                                            <th>REVENUE</th>
+                                            <th>PROJECT CLASSIFICATION</th>
+                                            <th>PROJECT TYPE</th>
                                             <th>ACTION</th>
 
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <th scope="row">1</th>
-                                            <td>Name</td>
-                                            <td>Position</td>
-                                            <td>Classification</td>
-                                            <td>Type</td>
-                                            <td>Latest Position</td>
-                                            <td>Doc</td>
-                                            <td><a href="#" class="small-box-footer" data-toggle="modal" data-target="#myModalViewDataListProject"> Detail <i class="fa fa-arrow-circle-right"></i></a> 
+                                            <td>1</td>
+                                            <td>Bid Risk Assessment</td>
+                                            <td>Astra Graphia Information Technology</td>
+                                            <td>Rp 1.500.000.000</td>
+                                            <td>Implementation & Operation</td>
+                                            <td>Software</td>
+                                            <td><a href="list-project-detail.html" class="small-box-footer"> Detail </a> 
                                             </td>
+                                        </tr>
 
+                                        <tr>
+                                            <td>2</td>
+                                            <td>Project Management Dashboard</td>
+                                            <td>Astra Graphia Information Technology</td>
+                                            <td>Rp 3.000.000.000</td>
+                                            <td>Implementation</td>
+                                            <td>Software</td>
+                                            <td><a href="list-project-detail.html" class="small-box-footer"> Detail </a> 
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
@@ -242,7 +239,6 @@
                 </div>
             </div>
         </section>
-
 
         <div id="myModalViewDataHistory" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:1000px">
@@ -266,252 +262,6 @@
                     </div>
                     <div class="modal-footer" style="text-align: center">
                         <button id="jdcpmg001p02CancelModal" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div id="myModalViewDataListProject" class="modal fade" role="dialog">
-            <div class="modal-dialog" style="width:700px">
-                <div class="modal-content">
-                    <div class="modal-body" style="text-align: center;" >
-                        <label>
-                            Detail Project
-                        </label>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="card">
-                                <div class="body">
-                                    <form id="form_validation" method="POST">
-                                        <label for="name_project">Name Project</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" class="form-control" placeholder="Enter your name project">
-                                            </div>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="name_project">RFQ / RFP</label>
-                                            <input type="file" class="form-control-file">
-                                        </div>
-                                        <label for="email_address">Position Project</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Perkantoran">Perkantoran</option>
-                                                            <option value="Kilang Minyak">Kilang Minyak</option>
-                                                            <option value="Area Pertambangan">Area Pertambangan</option>
-                                                            <option value="Data Center">Data Center</option>
-                                                            <option value="Offsite (Remote)">Offsite (Remote)</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Project Clasification</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Box Only">Box Only</option>
-                                                            <option value="Implementation">Implementation</option>
-                                                            <option value="Operation">Operation</option>
-                                                            <option value="Operation & Implementation">Operation & Implementation</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Type Project</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="System Server">System Server</option>
-                                                            <option value="System Storage">System Storage</option>
-                                                            <option value="Software">Software</option>
-                                                            <option value="Client">Client</option>
-                                                            <option value="Core Network">Core Network</option>
-                                                            <option value="Distribution Network">Distribution Network</option>
-                                                            <option value="Access Network">Access Network</option>
-                                                            <option value="Cabling Network">Cabling Network</option>
-                                                            <option value="Radio Link">Radio Link</option>
-                                                            <option value="Firewall">Firewall</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Main Activity</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Pontential Risk</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Inherent Level Risk Impact</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Catastrophic">Catastrophic</option>
-                                                            <option value="Major">Major</option>
-                                                            <option value="Moderate">Moderate</option>
-                                                            <option value="Minor">Minor</option>
-                                                            <option value="Insignificant">Insignificant</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Inherent Likelihood Level</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Rare">Rare</option>
-                                                            <option value="Unlikely">Unlikely</option>
-                                                            <option value="Possible">Possible</option>
-                                                            <option value="Likely">Likely</option>
-                                                            <option value="Almost Certain">Almost Certain</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="name_project">UL Risk Level</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" class="form-control" placeholder="Result Risk Level">
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Action Plan</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Ekspektasi UL Level Risk Impact</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Catastrophic">Catastrophic</option>
-                                                            <option value="Major">Major</option>
-                                                            <option value="Moderate">Moderate</option>
-                                                            <option value="Minor">Minor</option>
-                                                            <option value="Insignificant">Insignificant</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="email_address">Ekspektasi UL Likelihood Level</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="">-- Please select --</option>
-                                                            <option value="Rare">Rare</option>
-                                                            <option value="Unlikely">Unlikely</option>
-                                                            <option value="Possible">Possible</option>
-                                                            <option value="Likely">Likely</option>
-                                                            <option value="Almost Certain">Almost Certain</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <label for="name_project">Ekspektasi UL Risk Level</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" class="form-control" placeholder="Result Risk Level">
-                                            </div>
-                                        </div>
-                                        <label for="name_project">Generate Document</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" class="form-control" placeholder=".file">
-                                            </div>
-                                        </div>
-                                        <div class="row clearfix">
-                                            <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                                                <div class="card">
-                                                    <div class="header">
-                                                        <h2>
-                                                            History
-                                                        </h2>
-                                                    </div>
-                                                    <div class="body table-responsive">
-                                                        <table class="table table-striped">
-                                                            <thead>
-                                                                <tr>
-                                                                    <th>NO</th>
-                                                                    <th>DATE</th>
-                                                                    <th>LATEST POSITION</th>
-                                                                    <th>STATUS</th>
-                                                                    <th>REASON</th>
-
-                                                                </tr>
-                                                            </thead>
-                                                            <tbody>
-                                                                <tr>
-                                                                    <th scope="row">1</th>
-                                                                    <td>Date</td>
-                                                                    <td>Latest Position</td>
-                                                                    <td>Status</td>
-                                                                    <td>Reason</td>
-                                                                </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcpmg001p02CancelModal" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-
                     </div>
                 </div>
             </div>
