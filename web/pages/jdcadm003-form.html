@@ -125,8 +125,8 @@
                                 <span>Bid Risk List</span>
                             </a>
                         </li>
-                        
-                        <li>
+
+                        <li class="active">
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">widgets</i>
                                 <span>Data Master</span>
@@ -139,14 +139,14 @@
                             </ul>
                         </li>
 
-                        <li class="active">
+                        <li>
                             <a href="javascript:void(0);" class="menu-toggle">
                                 <i class="material-icons">widgets</i>
                                 <span>User Management</span>
                             </a>
                             <ul class="ml-menu">
                                 <li>
-                                    <a href="jdcuam001.html">Maintain User</a>
+                                    <a href="jdcuamjdcuam001.html">Maintain User</a>
                                 </li>
                                 <li>
                                     <a href="jdcuam002.html">Maintain Role</a>
@@ -195,11 +195,11 @@
                         <div class="card">
                             <div class="header">
                                 <h2>
-                                    Maintain Role User
+                                    Business Parameter
                                 </h2>
                                 <div style="margin-top: 1rem">
                                     <button type="button" class="btn btn-primary waves-effect" 
-                                            data-toggle="modal" data-target="#jdcuam002-add">
+                                            data-toggle="modal" data-target="#jdcadm001-add">
                                         Add New
                                     </button>
                                 </div>
@@ -208,23 +208,93 @@
                                 <table class="table table-striped">
                                     <thead>
                                         <tr>
-                                            <th>User</th>
-                                            <th>Role Name</th>
-                                            <th>Role Desc</th>
-                                            <th>Begin Eff</th>
-                                            <th>End Eff</th>
+                                            <th>NO</th>
+                                            <th>Code</th>
+                                            <th>Key</th>
+                                            <th>Desc1</th>
+                                            <th>Desc2</th>
+                                            <th>Desc3</th>
+                                            <th>Desc4</th>
+                                            <th>Desc5</th> 
+                                            <th>Seq. Num.</th>
+                                            <th>Status</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>admin</td>
-                                            <td>ADM</td>
-                                            <td>Admin</td>
-                                            <td>01-Jan-2017</td>
-                                            <td>01-Jan-2100</td>
+                                            <th scope="row">1</th>
+                                            <td>PRPST</td>
+                                            <td>001</td>
+                                            <td>Perkantoran</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td> 
+                                            <td>1</td>
+                                            <td>Active</td>
                                             <td>
-                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcuam002-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>PRPST</td>
+                                            <td>002</td>
+                                            <td>Kilang Minyak</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td> 
+                                            <td>2</td>
+                                            <td>Active</td>
+                                            <td>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">3</th>
+                                            <td>PRPST</td>
+                                            <td>003</td>
+                                            <td>Area Pertambangan</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td> 
+                                            <td>3</td>
+                                            <td>Active</td>
+                                            <td>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">4</th>
+                                            <td>PRPST</td>
+                                            <td>004</td>
+                                            <td>Data Center</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td> 
+                                            <td>4</td>
+                                            <td>Active</td>
+                                            <td>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">5</th>
+                                            <td>PRPST</td>
+                                            <td>005</td>
+                                            <td>Offsite (Remote)</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td>
+                                            <td>-</td> 
+                                            <td>5</td>
+                                            <td>Active</td>
+                                            <td>
+                                                <a href="#" class="small-box-footer" data-toggle="modal" data-target="#jdcadm001-edit"> Edit <i class="fa fa-arrow-circle-right"></i></a>
                                             </td>
                                         </tr>
                                     </tbody>
@@ -235,141 +305,83 @@
                 </div>
             </div>
         </section>
-
-        <div id="jdcuam002-add" class="modal fade" role="dialog">
+        
+        <div id="jdcadm001-add" class="modal fade" role="dialog">
             <div class="modal-dialog" style="width:700px">
                 <div class="modal-content">
                     <div class="modal-body" style="text-align: center;" >
-                        <label>Add Role User</label>
+                        <label>Edit Business Parameter</label>
                     </div>
                     <div class="row clearfix">
                         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                             <div class="card">
                                 <div class="body">
                                     <form id="form_validation" method="POST">
-                                        <label for="name_project">User</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Role Name</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Role Desc</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="text" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">Begin Eff</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="date" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="name_project">End Eff</label>
-                                        <div class="form-group">
-                                            <div class="form-line">
-                                                <input type="date" id="email_address" 
-                                                       class="form-control">
-                                            </div>
-                                        </div>
-
-                                        <label for="email_address">Status</label>
-                                        <div class="form-group form-float">
-                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
-                                                <div class="row clearfix">
-                                                    <div class="col-sm-6" style="margin-left: inherit;">
-                                                        <select class="form-control show-tick">
-                                                            <option value="1">-- Please select --</option>
-                                                            <option value="2">Active</option>
-                                                            <option value="3">Inactive</option>
-                                                        </select>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcuam002-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcuam002-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="jdcuam002-edit" class="modal fade" role="dialog">
-            <div class="modal-dialog" style="width:700px">
-                <div class="modal-content">
-                    <div class="modal-body" style="text-align: center;" >
-                        <label>Edit Role User</label>
-                    </div>
-                    <div class="row clearfix">
-                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                            <div class="card">
-                                <div class="body">
-                                    <form id="form_validation" method="POST">
-                                        <label for="name_project">User</label>
+                                        <label for="name_project">Code</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
                                                        class="form-control"
-                                                       placeholder="admin">
+                                                       disabled
+                                                       placeholder="PRPST">
                                             </div>
                                         </div>
-
-                                        <label for="name_project">Role Name</label>
+                                        <label for="name_project">Key</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       placeholder="ADM">
+                                                       class="form-control" 
+                                                       placeholder="001">
                                             </div>
                                         </div>
-
-                                        <label for="name_project">Role Desc</label>
+                                        <label for="name_project">Desc1</label>
                                         <div class="form-group">
                                             <div class="form-line">
                                                 <input type="text" id="email_address" 
-                                                       class="form-control"
-                                                       placeholder="Admin">
+                                                       class="form-control" 
+                                                       placeholder="Perkantoran">
                                             </div>
                                         </div>
-
-                                        <label for="name_project">Begin Eff</label>
+                                        <label for="name_project">Desc2</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="date" id="email_address" 
-                                                       class="form-control"
-                                                       value="2017-01-01">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
                                             </div>
                                         </div>
-
-                                        <label for="name_project">End Eff</label>
+                                        <label for="name_project">Desc3</label>
                                         <div class="form-group">
                                             <div class="form-line">
-                                                <input type="date" id="email_address" 
-                                                       class="form-control"
-                                                       value="2100-01-01">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
                                             </div>
                                         </div>
-
+                                        <label for="name_project">Desc4</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc5</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Sequence Number</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
                                         <label for="email_address">Status</label>
                                         <div class="form-group form-float">
                                             <div class="body" style="padding-bottom: inherit; padding-top: inherit">
@@ -385,8 +397,113 @@
                                             </div>
                                         </div>
                                         <div class="modal-footer" style="text-align: center">
-                                            <button id="jdcuam002-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
-                                            <button id="jdcuam002-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                            <button id="jdcadm001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcadm001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div id="jdcadm001-edit" class="modal fade" role="dialog">
+            <div class="modal-dialog" style="width:700px">
+                <div class="modal-content">
+                    <div class="modal-body" style="text-align: center;" >
+                        <label>Edit Business Parameter</label>
+                    </div>
+                    <div class="row clearfix">
+                        <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                            <div class="card">
+                                <div class="body">
+                                    <form id="form_validation" method="POST">
+                                        <label for="name_project">Code</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control"
+                                                       disabled
+                                                       placeholder="PRPST">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Key</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       disabled
+                                                       placeholder="001">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc1</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="Perkantoran">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc2</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc3</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc4</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Desc5</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="name_project">Sequence Number</label>
+                                        <div class="form-group">
+                                            <div class="form-line">
+                                                <input type="text" id="email_address" 
+                                                       class="form-control" 
+                                                       placeholder="-">
+                                            </div>
+                                        </div>
+                                        <label for="email_address">Status</label>
+                                        <div class="form-group form-float">
+                                            <div class="body" style="padding-bottom: inherit; padding-top: inherit">
+                                                <div class="row clearfix">
+                                                    <div class="col-sm-6" style="margin-left: inherit;">
+                                                        <select class="form-control show-tick">
+                                                            <option value="1">-- Please select --</option>
+                                                            <option value="2" selected>Active</option>
+                                                            <option value="3">Inactive</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="modal-footer" style="text-align: center">
+                                            <button id="jdcadm001-submit" class="btn btn-primary large-button" data-dismiss="modal">SUBMIT</button>
+                                            <button id="jdcadm001-cancel" class="btn btn-primary large-button" data-dismiss="modal">CLOSE</button>
                                         </div>
                                     </form>
                                 </div>
